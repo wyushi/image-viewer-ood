@@ -11,7 +11,7 @@ public class ImageStoreImpl implements ImageStore {
     private final OrderedMap<String, ImageMetadata> store;
 
     public ImageStoreImpl() {
-        this.store = new LinkedMap<>();
+        this.store = new LinkedHashMap<>();
     }
 
     @Override
