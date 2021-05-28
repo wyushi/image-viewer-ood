@@ -3,14 +3,14 @@ package problems.ImageViewer;
 import java.util.List;
 
 import problems.ImageViewer.implementations.ImageMetadataImpl;
-import problems.ImageViewer.implementations.LinkedPhotoMap;
+import problems.ImageViewer.implementations.ImageStoreImpl;
 import problems.ImageViewer.interfaces.ImageMetadata;
 import problems.ImageViewer.interfaces.ImageStore;
 
 public class App {
 
     public static void main(String[] args) {
-        ImageStore store = new LinkedPhotoMap();
+        ImageStore store = new ImageStoreImpl();
         ImageMetadata i1 = ImageMetadataImpl.create("1", "/images/1");
         store.addPhoto(i1);
         ImageMetadata i2 = ImageMetadataImpl.create("2", "/images/2");

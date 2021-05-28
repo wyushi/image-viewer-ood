@@ -4,7 +4,6 @@ import problems.ImageViewer.interfaces.ImageMetadata;
 
 public class ImageMetadataImpl implements ImageMetadata {
 
-
     public static ImageMetadata create(String id, String url) {
         return new ImageMetadataImpl(id, url);
     }
